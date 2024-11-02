@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import "@radix-ui/themes/styles.css";
 import "./globals.css";
 import Navbar from "./Navbar";
-import { Theme } from "@radix-ui/themes";
+import { Theme, ThemePanel } from "@radix-ui/themes";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Theme>
+        <Theme accentColor="violet">
           <Navbar />
           <main className="p-5">{children}</main>
         </Theme>
